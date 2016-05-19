@@ -6,15 +6,21 @@
 
     <groupId>org.wildfly.bugtest</groupId>
     <artifactId>jdk9-compiler</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>processor</module>
+        <module>code</module>
+    </modules>
     <build>
+
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.1</version>
+                    <version>3.5.1</version>
                     <configuration>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
@@ -28,4 +34,5 @@
             </plugins>
         </pluginManagement>
     </build>
+
 </project>

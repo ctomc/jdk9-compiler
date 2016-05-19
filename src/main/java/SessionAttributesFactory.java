@@ -1,3 +1,0 @@
-public interface SessionAttributesFactory<V> {
-
-}
