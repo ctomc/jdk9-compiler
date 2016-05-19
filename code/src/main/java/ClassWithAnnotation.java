@@ -26,9 +26,7 @@ import javax.annotation.Generated;
 public class ClassWithAnnotation {
 
     public void someMethod() throws Exception {
-
         Class generated = Class.forName(Generated.class.getName()); //try to load javax.annotation.Generated class
-
     }
 
 }
